@@ -10,28 +10,46 @@ body {
     padding: 10px;
     background: lightgray;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
-header {
+header{
     position: fixed;
     top: 0;
     left: 200px;
-    width: calc(100% - 200px); 
+    right: 0;
     text-align: center;
-    background: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px 20px;
+    background-color: red;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+}
+
+nav button {
+    margin: 5px 0;
+    padding: 20px;
+    width: 23%;
+    font-size: 16px;
+    background-color: violet;
+    border: 1px solid yellow;
+    cursor: pointer;
 }
 
 main {
-    margin-left: 200px;
-    padding-top: 100px;  
-    padding: 20px;
+    margin-left: 220px;
+    margin-top: 210px;
 }
 
 #thanks{
-    position: fixed;
+    position: sticky;
     bottom: 8px;
     right: 16px;
+    float: right;
     font-size: 20px;
+    background-color: lightblue;
 }
 
 #container {
